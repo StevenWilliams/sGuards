@@ -1,0 +1,108 @@
+#permissions:
+# vulcan.prison.guards.duty : allows guard to go on duty
+duty-msg:
+  - '&6==============================='
+  - '&b{GUARD} is now on duty!'
+  - '&6==============================='
+off-duty-msg:
+  - '&6==============================='
+  - '&b{GUARD} is now off duty!'
+  - '&6==============================='
+guard-death-msg:
+  - '&c{GUARD} got killed whilst on duty!'
+#vulcan.prison.guards.duty.bypasstp - bypass spawntp
+#warmup in seconds (bypass with vulcan.prison.guards.duty.bypasswarmup)
+
+on-duty-warmup: 3
+off-duty-warmup: 1
+dutyeffects:
+    SPEED: 1
+    NIGHT_VISION: 10
+dutyarmour:
+    CHAINMAIL_BOOTS:
+        quantity: 1
+        displayName: '&6Boots'
+        lore:
+          - '&5This is property of &b&o{GUARD}'
+          - '&6Guard Item'
+        enchantments:
+          DURABILITY: 10
+          PROTECTION_ENVIRONMENTAL: 10
+          PROTECTION_FIRE: 10
+    CHAINMAIL_LEGGINGS:
+        quantity: 1
+        displayName: '&6Leggings'
+        lore:
+          - '&5This is property of &b&o{GUARD}'
+          - '&6Guard Item'
+        enchantments:
+          DURABILITY: 10
+          PROTECTION_ENVIRONMENTAL: 10
+          PROTECTION_FIRE: 10
+    CHAINMAIL_CHESTPLATE:
+        quantity: 1
+        displayName: '&6Chestplate'
+        lore:
+          - '&5This is property of &b&o{GUARD}'
+          - '&6Guard Item'
+        enchantments:
+          DURABILITY: 10
+          PROTECTION_ENVIRONMENTAL: 10
+          PROTECTION_FIRE: 10
+    CHAINMAIL_HELMET:
+        quantity: 1
+        displayName: '&6Helmet'
+        lore:
+          - '&5This is property of &b&o{GUARD}'
+          - '&6Guard Item'
+        enchantments:
+          DURABILITY: 10
+          PROTECTION_ENVIRONMENTAL: 10
+          PROTECTION_FIRE: 10
+dutyinv:
+    DIAMOND_SWORD:
+        displayName: '&6Sword'
+        quantity: 1
+        lore:
+          - '&5This is property of &b&o{GUARD}'
+          - '&6Guard Item'
+        enchantments:
+          DAMAGE_ALL: 6
+          FIRE_ASPECT: 3
+          DURABILITY: 10
+    BOW:
+        displayName: '&bBow'
+        quantity: 1
+        lore:
+         - '&5This is property of &b&o{GUARD}'
+         - '&6Guard Item'
+        enchantments:
+          ARROW_FIRE: 1
+          ARROW_DAMAGE: 3
+          ARROW_KNOCKBACK: 2
+          ARROW_INFINITE: 1
+          DURABILITY: 10
+    STICK:
+        quantity: 1
+        displayName: '&bBaton'
+        lore:
+         - '&5This is property of &b&o{GUARD}'
+         - '&6Guard Item'
+        enchantments:
+            KNOCKBACK: 19
+    ARROW:
+        quantity: 1
+        displayName: '&bArrow'
+        lore:
+         - '&5This is property of &b&o{GUARD}'
+         - '&6Guard Item'
+    GOLDEN_APPLE:
+        quantity: 10
+        datavalue: 1
+        displayName: '&6God Apple'
+        lore:
+         - '&5This is property of &b&o{GUARD}'
+         - '&6Guard Item'
+        enchantments:
+
+

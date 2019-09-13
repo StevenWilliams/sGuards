@@ -18,6 +18,8 @@ off-duty-warmup: 1
 dutyeffects:
     SPEED: 1
     NIGHT_VISION: 10
+dutyperms:
+  - 'combatlogx.bypass'
 dutyarmour:
     CHAINMAIL_BOOTS:
         quantity: 1

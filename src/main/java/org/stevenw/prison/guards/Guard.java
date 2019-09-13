@@ -45,7 +45,9 @@ public class Guard {
 
 
     }
-
+    public List<String> getPerms() {
+        return plugin.getConfig().getStringList("dutyperms");
+    }
     public boolean isOnDuty() {
         if (onDuty.contains(player.getUniqueId())) {
             return true;
@@ -62,11 +64,23 @@ public class Guard {
                 setGuardInventory();
                 setGuardArmour();
                 setGuardEffects();
+                addPerms();
             }
+
         }
         return false;
     }
 
+    private void addPerms() {
+        for(String perm : getPerms()) {
+            plugin.getPerms().playerAdd(player, perm);
+        }
+    }
+    private void removePerms() {
+        for(String perm : getPerms()) {
+            plugin.getPerms().playerRemove(player, perm);
+        }
+    }
     private void removePotionEffects() {
         PotionEffect pe;
         for (Iterator localIterator = player.getActivePotionEffects().iterator(); localIterator.hasNext(); player.removePotionEffect(pe.getType())) {
@@ -80,6 +94,7 @@ public class Guard {
                 removePotionEffects();
                 player.getInventory().clear();
                 loadPlayerInventory();
+                removePerms();
                 return true;
             } else {
                 return false;
